@@ -52,6 +52,16 @@ namespace TestExercitii.Part2
                                     new Room[] { room1, room2 });
 
             hotel.DisplayInfo();
+
+            Hotel hotelAstoria = new Hotel("Astoria", @"Astora Hotel is an excellent place to stay while in Iasi",
+                                    @"Piata Unirii Street No. 7 Iasi, Romania", 5, 1.8, new DateTime(1990, 12, 19),
+                                    new Room[] { room2 });
+
+            Hotel.SetDistanceMesurementUnit("KM");
+            Console.WriteLine("Distance measurement unit is {0}", Hotel.GetDistanceMesurementUnit());
+
+            hotel.DisplayInfo();
+            hotelAstoria.DisplayInfo();
         }
     }
 }

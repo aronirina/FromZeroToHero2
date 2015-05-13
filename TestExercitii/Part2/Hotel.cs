@@ -14,11 +14,22 @@ namespace TestExercitii.Part2
         public DateTime openingDate;
         public Room[] rooms;
 
-        public static string distanceMesurementUnit;
+        private static string distanceMesurementUnit;
 
         static Hotel()
         {
             distanceMesurementUnit = "Miles";
+        }
+
+
+        public static void SetDistanceMesurementUnit(string measurementUnit)
+        {
+            distanceMesurementUnit = measurementUnit;
+        }
+
+        public static string GetDistanceMesurementUnit()
+        {
+            return distanceMesurementUnit;
         }
 
         public Hotel(string name, string description, string address, int stars,
