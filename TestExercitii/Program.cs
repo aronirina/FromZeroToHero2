@@ -162,7 +162,7 @@ namespace TestExercitii
             double priceWD;
             priceWD= CalculateDiscount(234.7);
             Console.WriteLine("Call price: {0}", priceWD);
-            priceWD = CalculateDiscount(24.8 ,discountType = DiscountType.BestDeal);
+           // priceWD = CalculateDiscount(24.8 ,discountType = DiscountType.BestDeal);
         }
     }
 }
