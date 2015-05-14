@@ -59,20 +59,26 @@ namespace TestExercitii.Part2
             */
             Property hotelAstoria = new Property("Astoria", @"Astora Hotel is an excellent place to stay while in Iasi",
                                     @"Piata Unirii Street No. 7 Iasi, Romania", 5, 1.8, new DateTime(1990, 12, 19),
-                                    new Room[] { room2 });
+                                    new Room[] { room2 },4000);
 
             Property.SetDistanceMesurementUnit("KM");
             Console.WriteLine("Distance measurement unit is {0}", Property.GetDistanceMesurementUnit());
 
             //hotel.DisplayInfo();
             //hotelAstoria.DistanceConvertor("KM");
-            //hotelAstoria.DisplayInfo();
+            hotelAstoria.DisplayInfo();
 
             //Part 3, Ex3
 
             Property htl=new Property();
             htl.Rooms = new Room[0];
             htl.DisplayInfo();
+
+            //Part3, Ex7
+
+            GuestHouse gh = new GuestHouse("Cabana X", @"Short description", @"Sibiu", 3, 2.5, new DateTime(2004, 4, 28),
+                            new Room[] { room2 }, 4);
+            gh.DisplayInfo();
         }
     }
 }

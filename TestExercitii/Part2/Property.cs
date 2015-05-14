@@ -16,6 +16,10 @@ namespace TestExercitii.Part2
         private DateTime openingDate;
         public Room[] Rooms{get;set;}
 
+        public int likes { get; set; }
+
+
+
         public string hotelName
         {
             get { return name; }
@@ -129,7 +133,7 @@ namespace TestExercitii.Part2
         }
 
         public Property(string name, string description, string address, int stars,
-                     double distanceToCenter, DateTime openingDate, Room[] rooms)
+                     double distanceToCenter, DateTime openingDate, Room[] rooms, int likes)
         {
             this.name = name;
             this.description = description;
@@ -138,7 +142,9 @@ namespace TestExercitii.Part2
             this.distanceToCenter = distanceToCenter;
             this.openingDate = openingDate;
             this.Rooms = rooms;
+            this.likes = likes;
         }
+
 
         public void DisplayInfo()
         {
@@ -152,6 +158,7 @@ namespace TestExercitii.Part2
             {
                 room.DisplayInfo();
             }
+            Console.WriteLine("Likes: {0}", likes);
         }
       
     }
