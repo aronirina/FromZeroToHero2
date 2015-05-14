@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestExercitii.Part2
 {
-    class Hotel
+    class Property
     {
         //Part3, Ex 1
       
@@ -90,14 +90,14 @@ namespace TestExercitii.Part2
 
         //Part 3, Ex5
 
-        public Hotel()
+        public Property()
         { }
 
         //Part2
 
         private static string distanceMesurementUnit;
 
-        static Hotel()
+        static Property()
         {
             distanceMesurementUnit = "Miles";
         }
@@ -128,7 +128,7 @@ namespace TestExercitii.Part2
             return measurementUnit;
         }
 
-        public Hotel(string name, string description, string address, int stars,
+        public Property(string name, string description, string address, int stars,
                      double distanceToCenter, DateTime openingDate, Room[] rooms)
         {
             this.name = name;

@@ -57,12 +57,12 @@ namespace TestExercitii.Part2
 
             hotel.DisplayInfo();
             */
-            Hotel hotelAstoria = new Hotel("Astoria", @"Astora Hotel is an excellent place to stay while in Iasi",
+            Property hotelAstoria = new Property("Astoria", @"Astora Hotel is an excellent place to stay while in Iasi",
                                     @"Piata Unirii Street No. 7 Iasi, Romania", 5, 1.8, new DateTime(1990, 12, 19),
                                     new Room[] { room2 });
 
-            Hotel.SetDistanceMesurementUnit("KM");
-            Console.WriteLine("Distance measurement unit is {0}", Hotel.GetDistanceMesurementUnit());
+            Property.SetDistanceMesurementUnit("KM");
+            Console.WriteLine("Distance measurement unit is {0}", Property.GetDistanceMesurementUnit());
 
             //hotel.DisplayInfo();
             //hotelAstoria.DistanceConvertor("KM");
@@ -70,7 +70,7 @@ namespace TestExercitii.Part2
 
             //Part 3, Ex3
 
-            Hotel htl=new Hotel();
+            Property htl=new Property();
             htl.Rooms = new Room[0];
             htl.DisplayInfo();
         }
