@@ -8,10 +8,34 @@ namespace TestExercitii.Part2
 {
     class Room
     {
-        public string description;
-        public int places, number, floor;
-        public RoomTypes type;
+        //Part3, Ex2
+        private string description;
+        private int places, number, floor;
+        private RoomTypes type;
 
+        public RoomTypes roomType
+        {
+            get { return type; }
+            set { type = value; }
+        }
+        public string roomDesc
+        {
+            get { return description; }
+            set
+            {
+                if (value.Length > 500)
+                    Console.WriteLine("Error! Wrong description!");
+                else
+                    description = value;
+            }
+        }
+        
+        //Part3, Ex4
+
+        public bool airCond {get; set;}
+        public bool flatTV {get; set;}
+
+        //Part2
         public Room(int number, string description, int places, int floor, RoomTypes type)
         {
             this.number = number;

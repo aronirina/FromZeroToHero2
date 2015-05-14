@@ -8,8 +8,11 @@ namespace TestExercitii.Part2
 {
     class ExPart2
     {
+
         public static void Main()
         {
+            //Part 2
+
             /*
             Hotel hotel = new Hotel();
             hotel.name = "Unirea Hotel";
@@ -39,20 +42,21 @@ namespace TestExercitii.Part2
             Console.WriteLine("Hotel address: {0}", hotel.address);
             Console.WriteLine("Hotel opening year: {0}", hotel.openingDate.Year);
             Console.WriteLine("Hotel ");
-            */
+           
 
             Room room1 = new Room(1, @"A beautiful room for 1 person with all facilities inclued", 1,
                                   2, RoomTypes.Single);
+             */
 
             Room room2 = new Room(2, @"A beautiful room for 2 person with a beautiful view towords the city cener", 2,
                                    7, RoomTypes.Double);
 
-            Hotel hotel = new Hotel("Unirea Hotel", @"Unirea Hotel is one of the most good looking hotel in Iasi Romania.",
+           /* Hotel hotel = new Hotel("Unirea Hotel", @"Unirea Hotel is one of the most good looking hotel in Iasi Romania.",
                                     @"Piaţa Unirii Street No. 5, 700056 Iaşi, Romania", 4, 1.6, new DateTime(1975, 10, 25),
                                     new Room[] { room1, room2 });
 
             hotel.DisplayInfo();
-
+            */
             Hotel hotelAstoria = new Hotel("Astoria", @"Astora Hotel is an excellent place to stay while in Iasi",
                                     @"Piata Unirii Street No. 7 Iasi, Romania", 5, 1.8, new DateTime(1990, 12, 19),
                                     new Room[] { room2 });
@@ -60,8 +64,15 @@ namespace TestExercitii.Part2
             Hotel.SetDistanceMesurementUnit("KM");
             Console.WriteLine("Distance measurement unit is {0}", Hotel.GetDistanceMesurementUnit());
 
-            hotel.DisplayInfo();
-            hotelAstoria.DisplayInfo();
+            //hotel.DisplayInfo();
+            //hotelAstoria.DistanceConvertor("KM");
+            //hotelAstoria.DisplayInfo();
+
+            //Part 3, Ex3
+
+            Hotel htl=new Hotel();
+            htl.Rooms = new Room[0];
+            htl.DisplayInfo();
         }
     }
 }

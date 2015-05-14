@@ -29,7 +29,7 @@ namespace TestExercitii
 
               }
           }
-           */
+           
 
         public static string LargestNamedCountry(params string[] countries)
         {
@@ -77,7 +77,7 @@ namespace TestExercitii
 
        }
 
-      /* static double PriceWithDiscount(double price, int age, double pwd)
+     static double PriceWithDiscount(double price, int age, double pwd)
        {
            double discount;
            if (age < 7)
@@ -89,14 +89,14 @@ namespace TestExercitii
 
         pwd = price - discount;
         return pwd;
-       }*/
+       }
        public enum DiscountType
        {
            General,
            Promotion,
            BestDeal
        }
-        /*
+       
         static void exercise7(DiscountType disc, double price, int age, out double pwd)
        {
            double p;
@@ -114,7 +114,7 @@ namespace TestExercitii
 
             }
        }
-        */
+        
 
         static double CalculateDiscount(double price,  int age=14, DiscountType discountType=DiscountType.General)
        {
@@ -164,5 +164,6 @@ namespace TestExercitii
             Console.WriteLine("Call price: {0}", priceWD);
            // priceWD = CalculateDiscount(24.8 ,discountType = DiscountType.BestDeal);
         }
+         */
     }
 }
