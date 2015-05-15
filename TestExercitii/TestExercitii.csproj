@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Part2\ExPart2+3.cs" />
     <Compile Include="Part2\GuestHouse.cs" />
+    <Compile Include="Part2\Hotel.cs" />
     <Compile Include="Part2\Property.cs" />
     <Compile Include="Part2\Room.cs" />
     <Compile Include="Part3\ExPart3.cs" />
